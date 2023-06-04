@@ -1,0 +1,66 @@
+form i {
+    margin-left: -90px;
+    cursor: pointer;
+}
+
+
+#report_1-section .btn {
+    background-color: hsl(116, 30%, 36%);
+     color: white;
+}
+
+#report_1-section .btn:focus,  #report_1-section .btn:active, #report_1-section .btn:checked, #report_1-section .btn:disabled  {
+    box-shadow: none;
+    background-color: #c3e1c0;
+  }
+
+#report_2-section .btn {
+    background-color: hsl(194, 60%, 36%);
+    color: white;
+}
+
+#report_2-section .btn:focus,  #report_2-section .btn:active, #report_2-section .btn:checked, #report_2-section .btn:disabled  {
+    box-shadow: none;
+    background-color: #6bc9e5;
+  }
+
+#report_3-section .btn {
+    background-color: hsl(222, 53%, 50%);
+     color: white;
+}
+
+#report_3-section .btn:focus,  #report_3-section .btn:active, #report_3-section .btn:checked, #report_3-section .btn:disabled  {
+    box-shadow: none;
+    background-color: #7692D5;
+  }
+
+#report_4-section .btn {
+    background-color: hsl(285, 47%, 46%);
+    color: white;
+}
+
+#report_4-section .btn:focus,  #report_4-section .btn:active, #report_4-section .btn:checked, #report_4-section .btn:disabled  {
+    box-shadow: none;
+    background-color: #A472B5;
+  }
+
+#report_5-section .btn {
+    background-color: hsl(330, 65%, 48%);
+    color: white;
+}
+
+#report_5-section .btn:focus,  #report_5-section .btn:active, #report_5-section .btn:checked, #report_5-section .btn:disabled  {
+    box-shadow: none;
+    background-color: #fd93a9;
+  }
+
+
+#report_6-section .btn {
+    background-color: hsl( 36, 77%, 34%);
+    color: white;
+}
+
+#report_6-section .btn:focus,  #report_6-section .btn:active, #report_6-section .btn:checked, #report_6-section .btn:disabled  {
+    box-shadow: none;
+    background-color: #bd965b;
+  }

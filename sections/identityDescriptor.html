@@ -1,0 +1,26 @@
+<div class="identityDescriptor group">
+    <div class="credencials" name="credencials" onload="/assets/credencials.js">
+        <div class=" form form-group row">
+            <h2>Identity descriptor</h2>
+            <label for="userName" class="col-sm-3 col-form-label">Username</label>
+            <div class="col-sm-9">
+                <input type="text" id="userName " name="userName" class="form-control form-control-sm userName"
+                    onkeyup="saveNameValue(event)">
+            </div>
+        </div>
+        <div class="form form-group row">
+            <label for="password" class="col-sm-3 col-form-label">Password</label>
+            <div class="col-sm-9">
+                <input type="password" class="form-control form-control-sm password" id="password"
+                    onkeyup="savePassValue(event)">
+                <i class="bi bi-eye-slash  togglePassword password" id="togglePassword"></i>
+            </div>
+        </div>
+    </div>
+    <div class="form form-group row">
+        <label for="userId" class="col-sm-3 col-form-label">User ID</label>
+        <div class="col-sm-9">
+            <input type="text" name="userId" id="userId" class="form-control form-control-sm userId">
+        </div>
+    </div>
+</div>

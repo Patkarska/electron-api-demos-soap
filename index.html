@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SOAP Electron API Demos</title>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./assets/css/variables.css">
+  <link rel="stylesheet" href="./assets/css/nativize.css">
+  <link rel="stylesheet" href="./assets/css/global.css">
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <link rel="stylesheet" href="./assets/css/section.css">
+  <link rel="stylesheet" href="./assets/css/demo.css">
+  <link rel="stylesheet" href="./assets/css/custome.css">
+
+  <link rel="import" href="./sections/report_1.html">
+  <link rel="import" href="./sections/report_2.html">
+  <link rel="import" href="./sections/report_3.html">
+  <link rel="import" href="./sections/report_4.html">
+  <link rel="import" href="./sections/report_5.html">
+  <link rel="import" href="./sections/report_6.html">
+</head>
+
+<body>
+
+  <nav class="mainNav js-mainNav">
+    <header class="mainNav-header">
+      <h1 class="mainNav-title"><strong>SOAP</strong> Electron <br>API Demos</h1>
+    </header>
+
+    <div class="mainNav-item ">
+      <h5 class="mainNav-category">
+        <svg class="mainNav-icon">
+          <use xlink:href="assets/img/icons.svg#icon-windows"></use>
+        </svg>
+        Reports
+      </h5>
+      <button type="button" id="button-report_1" data-section="report_1"
+        class="mainNav-button u-report_1">First Report</button>
+
+      <button type="button" id="button-report_2" data-section="report_2"
+        class="mainNav-button u-report_2">Second report</button>
+
+      <button type="button" id="button-report_3" data-section="report_3"
+        class="mainNav-button u-report_3">Third report</button>
+
+      <button type="button" id="button-report_4" data-section="report_4"
+        class="mainNav-button u-report_4">Fourth report</button>
+
+      <button type="button" id="button-report_5" data-section="report_5" class="mainNav-button u-report_5">Fifth report</button>
+
+      <button type="button" id="button-report_6" data-section="report_6"
+        class="mainNav-button u-report_6">Sixth report</button>
+    </div>
+
+    <footer class="mainNav-footer">
+      <p>Version 1.0</p>
+    </footer>
+  </nav>
+
+  <main class="content js-content">
+
+  </main>
+
+  <script>
+    require('./assets/imports')
+    require('./assets/ex-links')
+    require('./assets/nav')
+    require('./assets/demo-btns')
+    require('./assets/normalize-shortcuts')
+    require('./sections/soapService')
+    require('./assets/include-html')
+    require('./assets/credentials')
+    require('./sections/config')
+  </script>
+
+  <script type="text/javascript" src="sections/config.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+
+  <script src="./assets/togglePassword.js"></script>
+  <script src="./assets/tabs.js" type="text/template"></script>
+  <script src="./sections/report_1.js"></script>
+  <script src="./sections/report_2.js"></script>
+  <script src="./sections/report_3.js"></script>
+  <script src="./sections/report_4.js"></script>
+  <script src="./sections/report_5.js"></script>
+  <script src="./sections/report_6.js"></script>
+
+  <script src="./sections/soapService.js"></script>
+  <script src="./assets/credentials.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

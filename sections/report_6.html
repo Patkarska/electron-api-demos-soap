@@ -1,0 +1,302 @@
+<template class="task-template">
+  <section id="report_6-section" class="section js-section u-report_6">
+    <div class="demo">
+      <div class="demo-wrapper">
+        <button id="app-version-demo-toggle" class="js-container-target demo-toggle-button">Request
+        </button>
+        <div class="demo-box">
+          <form id="frm1" action="" method="POST">
+
+            <div include-html="./sections/identityDescriptor.html"></div>
+
+            <div class="reportType group">
+              <h2>Adress Investigation</h2>
+
+              <div class="form form-group row">
+                <label for="reportFormat" class="col-sm-3 col-form-label">Target Report
+                  Format</label>
+                <div class="col-sm-9">
+                  <select id="reportFormat" class="form-select form-select-sm">
+                    <option value=""> </option>
+                    <option value="NONE">None</option>
+                    <option value="pdf">PDF</option>
+                    <option value="url">URL</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form form-group row">
+                <label for="referenceNumber" class="col-sm-3 col-form-label">Reference Nrumber</label>
+                <div class="col-sm-9">
+                  <input type="text" name="referenceNumber" id="referenceNumberReport_6"
+                    class="form-control form-control-sm">
+                </div>
+              </div>
+            </div>
+
+            <div class="searchedAddress group">
+              <h2>Searched Address</h2>
+              <div class="form form-group row ">
+                <label for="locationIdentificationType" class="col-sm-3 col-form-label">Typ</label>
+                <div class="col-sm-9">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active btn btn-primary btn-sm" id="pills-PersonAddressDescription_r6-tab "
+                        data-toggle="pill" href="#pills-PersonAddressDescription_r6" role="tab"
+                        aria-controls="pills-PersonAddressDescription_r6" aria-selected="true">Private</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-primary btn-sm"
+                        id="pills-CompanyAddressDescription_r6-tab CompanyAddressDescription_r6" data-toggle="pill"
+                        href="#pills-CompanyAddressDescription_r6" role="tab"
+                        aria-controls="pills-CompanyAddressDescription_r6" aria-selected="false">Company</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-primary btn-sm" id="pills-Identyficator_r6-tab Identyficator_r6"
+                        data-toggle="pill" href="#pills-Identyficator_r6" role="tab" aria-controls="pills-Identyficator_r6"
+                        aria-selected="false">Identyficator</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-PersonAddressDescription_r6" role="tabpanel"
+                  value="private" aria-labelledby="pills-PersonAddressDescription_r6-tab">
+                  <div id="PersonAddressDescription_r6" class="tab-pane active">
+                    <div class="checkbox ">
+                      <label for="sex" class="col-sm-3 col-form-label form-check-label">Sex</label>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="sexReport_6" value="unknown">
+                        <label class="form-check-label" for="unknown">Unknown</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="sexReport_6" value="female">
+                        <label class="form-check-label" for="female">Female</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="sexReport_6" value="male">
+                        <label class="form-check-label" for="male">Male</label>
+                      </div>
+                    </div>
+                    <div class="form form-group row">
+                      <label for="firstName" class="col-sm-3 col-form-label">First name</label>
+                      <div class="col-sm-9">
+                        <input type="text" name="firstName" id="firstNameReport_6"
+                          class="form-control form-control-sm">
+                      </div>
+                    </div>
+                    <div class="form form-group row">
+                      <label for="lastName" class="col-sm-3 col-form-label">Last name</label>
+                      <div class="col-sm-9">
+                        <input type="text" id="lastNameReport_6" name="lastName"
+                          class="form-control form-control-sm">
+                      </div>
+                    </div>
+                    <div class="form form-group row">
+                      <label for="middleName" class="col-sm-3 col-form-label">Middle name</label>
+                      <div class="col-sm-9">
+                        <input type="text" id="middleNameReport_6" name="middleName" class="form-control form-control-sm">
+                      </div>
+                    </div>
+                    <div class="form form-group row">
+                      <label for="birthDate" class="col-sm-3 col-form-label">Birthdate</label>
+                      <div class="col-sm-9">
+                        <input type="text" id="birthDateReport_6" name="birthDate"
+                          placeholder="YYYY-MM-DD or YYYY" class="form-control form-control-sm">
+                      </div>
+                    </div>
+                    <div class="form form-group row">
+                      <label for="street" class="col-sm-3 col-form-label">Street / hno / apt</label>
+                      <div class="col-sm-4">
+                        <input type="text" id="streetReport_6" name="street" placeholder="Street"
+                          class="form-control form-control-sm">
+                      </div>
+                      <div class="col-sm">
+                        <input type="text" id="houseNumberReport_6" name="houseNumber"
+                          placeholder="House number" class="form-control form-control-sm">
+                      </div>
+                      <div class="col-sm">
+                        <input type="text" id="apartmentReport_6" name="apartment"
+                          placeholder="Apartment number" class="form-control form-control-sm">
+                      </div>
+                    </div>
+                    <div class="form form-group row">
+                      <label for="zipCity" class="col-sm-3 col-form-label">ZIP / City</label>
+                      <div class="col-sm">
+                        <input type="text" id="zipReport_6" name="zip" placeholder="ZIP"
+                          class="form-control form-control-sm ">
+                      </div>
+                      <div class="col-sm">
+                        <input type="text" id="cityReport_6" name="city" placeholder="City"
+                          class="form-control form-control-sm ">
+                      </div>
+                    </div>
+                    <div class="form form-group row">
+                      <label for="country" class="col-sm-3 col-form-label">Country / Regions</label>
+                      <div class="col-sm">
+                        <input type="text" id="countryReport_6" name="country"
+                          placeholder="Country" class="form-control form-control-sm">
+                      </div>
+                      <div class="col-sm">
+                        <input type="text" id="regionCodeReport_6" name="regionCode"
+                          placeholder="Region" class="form-control form-control-sm">
+                      </div>
+                    </div>
+                    <div class="form form-group row">
+                      <label for="contactItems" class="col-sm-3 col-form-label">Contacts</label>
+                      <div class="col-sm">
+                        <label for="contactType">Type</label>
+                        <select id="contactTypeReport_6" class="form-select form-select-sm">
+                          <option value=""> </option>
+                          <option value="PHONE">PHONE</option>
+                          <option value="MOBILE">MOBILE</option>
+                          <option value="FAX">FAX</option>
+                          <option value="EMAIL">EMAIL</option>
+                          <option value="WEB">WEB</option>
+                          <option value="OTHER">OTHER</option>
+                        </select>
+                      </div>
+                      <div class="col-sm">
+                        <label for="contactText">Value</label>
+                        <div class="col-sm">
+                          <input type="text" id="contactTextReport_6" name="contactText"
+                            class="form-control form-control-sm">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-CompanyAddressDescription_r6" role="tabpanel"
+                  aria-labelledby="pills-CompanyAddressDescription_r6-tab">
+                  <div id="CompanyAddressDescription_r6" class="tab-pane">
+                    <div class="form form-group row">
+                      <label for="companyName" class="col-sm-3 col-form-label">Company name</label>
+                      <div class="col-sm-9">
+                        <input type="text" id="companyNameReport_6" name="companyName"
+                          class="form-control form-control-sm">
+                      </div>
+                    </div>
+                    <div class="form form-group row">
+                      <label for="street" class="col-sm-3 col-form-label">Street / hno / apt</label>
+                      <div class="col-sm">
+                        <input type="text" id="streetReport_6" name="street" placeholder="Street"
+                          class="form-control form-control-sm">
+                      </div>
+                      <div class="col-sm">
+                        <input type="text" id="houseNumberReport_6" name="houseNumber"
+                          placeholder="House number" class="form-control form-control-sm">
+                      </div>
+                      <div class="col-sm">
+                        <input type="text" id="apartmentReport_6" name="apartment"
+                          placeholder="Apartment number" class="form-control form-control-sm">
+                      </div>
+                    </div>
+                    <div class="form form-group row">
+                      <label for="zipCity" class="col-sm-3 col-form-label">ZIP / City</label>
+                      <div class="col-sm">
+                        <input type="text" id="zipReport_6" name="zip" placeholder="ZIP"
+                          class="form-control form-control-sm">
+                      </div>
+                      <div class="col-sm">
+                        <input type="text" id="cityReport_6" name="city" placeholder="City"
+                          class="form-control form-control-sm">
+                      </div>
+                    </div>
+                    <div class="form form-group row">
+                      <label for="countryRegions" class="col-sm-3 col-form-label">Country / Regions</label>
+                      <div class="col-sm">
+                        <input type="text" id="countryReport_6" name="country"
+                          placeholder="Country" class="form-control form-control-sm">
+                      </div>
+                      <div class="col-sm">
+                        <input type="text" id="regionCodeReport_6" name="regionCode"
+                          placeholder="Region" class="form-control form-control-sm">
+                      </div>
+                    </div>
+
+                    <div class="form form-group row">
+                      <label for="contactItems" class="col-sm-3 col-form-label">Contacts</label>
+                      <div class="col-sm">
+                        <label for="contactType">Type</label>
+                        <select id="contactTypeReport_6" class="form-select form-select-sm">
+                          <option value=""> </option>
+                          <option value="PHONE">PHONE</option>
+                          <option value="MOBILE">MOBILE</option>
+                          <option value="FAX">FAX</option>
+                          <option value="EMAIL">EMAIL</option>
+                          <option value="WEB">WEB</option>
+                          <option value="OTHER">OTHER</option>
+                        </select>
+                      </div>
+                      <div class="col-sm">
+                        <label for="contactText">Value</label>
+                        <div class="col-sm">
+                          <input type="text" id="contactTextReport_6" name="contactText"
+                            class="form-control form-control-sm">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-Identyficator_r6" role="tabpanel"
+                  aria-labelledby="pills-Identyficator_r6-tab">
+                  <div id="Identyficator_r6" class="tab-pane">
+                    <div class="form form-group row">
+                      <label for="identifierType" class="col-sm-3 col-form-label">Identifier type</label>
+                      <div class="col-sm-9">
+                        <select id="identifierTypesReport_6" class="form-select form-select-sm">
+                          <option value=""></option>
+                          <option value="ID_1">ID_1</option>
+                          <option value="ID_2">ID_2</option>
+                        </select>
+                      </div>
+
+                      <label for="identifierText" class="col-sm-3 col-form-label">Identifier text</label>
+                      <div class="col-sm-9">
+                        <input type="text" id="identifierTextReport_6" name="identifierText"
+                          class="form-control form-control-sm">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="sticky fixed-bottom submit">
+
+            <select id="system" class="form-select form-select-sm">
+              <option value="developmentSystem">Development System</option>
+              <option value="testSystem">Test System</option>
+              <option value="productiveSystem">Productive System</option>
+            </select>
+            <input type="submit" value="Submit" class=" btn btn-primary btn-sm"
+              onclick="report_6Request('report_6');">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo">
+      <div class="demo-wrapper">
+        <button id="app-version-demo-toggle" class="js-container-target demo-toggle-button">Response
+        </button>
+        <div class="demo-box">
+          <div>
+            <h2>Request</h2>
+            <pre id="requestReport_6"></pre>
+            <h2>Response</h2>
+            <pre id="responseReport_6"></pre>
+            <h2>Soap Response</h2>
+            <pre id="soapResponseReport_6"></pre>
+            <h2>Soap Request</h2>
+            <pre id="soapRequestReport_6"></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
